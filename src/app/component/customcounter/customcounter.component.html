@@ -1,5 +1,15 @@
 <div>
+  <div>
     <label> Counter Input </label>
-    <input />
-    <button (click)="onIncrement()"> Custom Increment </button>
+    <input [(ngModel)]="counterInput" />
+  </div>
+  <div>
+    <label> Action Type </label>
+    <select [(ngModel)]="actionType">
+        <option value="add"> Add </option>
+        <option value="remove"> Remove </option>
+    </select>
+  </div>
+
+  <button (click)="onIncrement()"> Proceed </button>
 </div>
