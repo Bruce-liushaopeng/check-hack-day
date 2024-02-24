@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class CustomcounterComponent {
   constructor(private store: Store<{counter: CounterModel}>) {
-
   }
 
   counterInput!: number;

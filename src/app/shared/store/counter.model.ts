@@ -1,3 +1,4 @@
 export interface CounterModel {
-    counter: number
+    counter: number,
+    channelName: string
 }

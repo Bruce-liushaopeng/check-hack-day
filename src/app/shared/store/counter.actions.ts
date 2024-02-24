@@ -7,3 +7,7 @@ export const customIncrement = createAction(
   'customIncrement',
   props<{ value: number; actionType: string }>()
 );
+export const changeChannelName = createAction(
+  'changeChannelName',
+  props<{ channel: string }>()
+);
