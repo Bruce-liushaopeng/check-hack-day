@@ -4,11 +4,12 @@ import { CounterModel } from '../../shared/store/counter.model';
 import { Observable, Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { getCounter } from '../../shared/store/counter.selector';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-counterdisplay',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonModule],
   templateUrl: './counterdisplay.component.html',
   styleUrl: './counterdisplay.component.css'
 })
